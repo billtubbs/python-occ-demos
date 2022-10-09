@@ -1,14 +1,26 @@
+# Simple demo of the Python CadQuery library for building
+# parametric 3D CAD models.
+#
+# Instructions
+# ------------
+#
+# Install CadQuery and CQ-Editor as described here:
+#  - https://cadquery.readthedocs.io
+#
+# Launch the CQ-Editor and run this script from the editor
+# by pressing the 'render' button.
+#
+# Uses the spline function to create two closed 2D 
+# shapes with curved edges and the sweep function
+# to create a solid by sweeping longitudinally from
+# the first shape to the second.
+
 import os
 import cadquery as cq
 
 results_dir = 'results'
 if not os.path.exists(results_dir):
     os.mkdir(results_dir)
-
-# Use the spline function to create two closed 2D 
-# shapes with curved edges and the sweep function
-# to create a solid by sweeping longitudinally from
-# the first shape to the second.
 
 # Path to sweep along
 path = cq.Workplane("XZ").lineTo(10, 0)
