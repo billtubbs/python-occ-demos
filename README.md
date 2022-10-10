@@ -43,4 +43,10 @@ I also tried out [PyMesh](https://pymesh.readthedocs.io/en/latest/) but I'm not 
 Seems to be a numerical tool for automatically generating a 3D mesh out of a point cloud.  See this article in Towards Data Science:
 - [5-Step Guide to generate 3D meshes from point clouds with Python](https://towardsdatascience.com/5-step-guide-to-generate-3d-meshes-from-point-clouds-with-python-36bad397d8ba).
 
-Maybe I will also try out [FreeCAD](https://doc.ubuntu-fr.org/freecad) some time.
+## FreeCAD
+
+I downloaded and successfully installed [FreeCAD](https://www.freecadweb.org). This is a complete, open source CAD design application which happens to utilise Python for automating many operations as well as parametric modelling and design.  Quite impressive, all-round CAD software application.
+
+Documentation is here and looks comprehensive:
+ - https://wiki.freecadweb.org/Main_Page
+ 
