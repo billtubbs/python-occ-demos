@@ -49,4 +49,7 @@ I downloaded and successfully installed [FreeCAD](https://www.freecadweb.org). T
 
 Documentation is here and looks comprehensive:
  - https://wiki.freecadweb.org/Main_Page
+
+Here is a page introducing the Python scripting capabilities:
+ - https://wiki.freecad.org/Python_scripting_tutorial
  
