@@ -1,13 +1,13 @@
-# python-occ-demos
+# Python CAD scripting libraries and tools
 
 Wanted to try out methods for generating 3D CAD drawings parametrically (i.e. programatically). 
 
 There seem to be quite a few libraries to do this and I know very little about CAD.  I tested 2 or 3 here with mixed results.
 
 
-## pythonocc-core
+## pythonOCC
 
-This library was mentioned in [this stackoverflow post](https://stackoverflow.com/q/14519057/1609514) in 2013.
+This library was mentioned in [this stackoverflow post](https://stackoverflow.com/q/14519057/1609514) in 2013.  It's actually a wrapper for a comprehensive CAD scripting package called OpenCASCADE C++ (hence the acronym OCC) and has been under development since 2008.
 
 I installed it from here:
  - https://anaconda.org/conda-forge/pythonocc-core
@@ -21,17 +21,21 @@ However there are lots of example scripts and notebooks which seem to be up to d
 
 I wanted to try out the exporting of models to files. [STEP](https://en.wikipedia.org/wiki/ISO_10303-21)(.stp), [X3D](.x3d) and [STL](https://en.wikipedia.org/wiki/STL_(file_format)) (.stl) seem to work, but STEP seems to be the most widely used.
 
-However, I didn't find Python-OCC very user-friendly.
+However, I didn't find Python-OCC very user-friendly.  I think if you are already an expert in OCC this package would be a great addition but otherwise, the learning curve is pretty steep.
 
 ## CadQuery
 
-Source code is here: https://github.com/CadQuery/cadquery
-Documentation is here: https://cadquery.readthedocs.io/en/latest/
+- Source code is here: https://github.com/CadQuery/cadquery
+- Documentation is here: https://cadquery.readthedocs.io/en/latest/
 
 Had one installation issue which was promptly fixed by installing with conda instead of pip, thanks to a [response from the developers](https://github.com/CadQuery/cadquery/issues/1174).
 
 I found this quite easy to use.  It is a heavily object-oriented programming library with quite high level, useful functionality such as splines and sweeps which is what I was looking for.  It also has an editor so you can view your construction.  In fact the python script is embedded in the editor (not run from the console on your machine), so you could say it is an IDE (integrated development environment).  It also exports drawing files to STEP.
 
+See this example script I made:
+ - [sweep_spline_demo.py](sweep_spline_demo.py)
+ 
+<img src="images/cad-object-3d-view.png" width=400>
 
 ## PyMesh
 
